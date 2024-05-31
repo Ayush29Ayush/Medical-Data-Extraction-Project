@@ -4,3 +4,12 @@
 4. Data Manipulation, Cleaning, Transformation => numpy, pandas
 6. Python Image Processing Library => Pillow
 7. API => FastAPI
+
+#! INSTALLING LIBRARIES & DEPENDENCIES
+8. We create 2 directories - frontend and backend to avoid conflicts
+9. Create a requirements.txt file in backend directory and install all the dependencies in a virtual environment
+10. pip install -r requirements.txt
+11. Add a .gitignore file
+12. Download pdf2image dependencies from "https://github.com/oschwartz10612/poppler-windows/releases/"
+13. Download the poppler, extract it, place it in the C drive and add its bin directory to env variable
+14. Now download pre-build binary package for tesseract dependencies from "https://github.com/tesseract-ocr/tesseract#installing-tesseract"
