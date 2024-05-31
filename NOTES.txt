@@ -1,0 +1,6 @@
+1. PDF to Image Conversion => pdf2image
+2. Image to Text => pytesseract
+3. Computer Vision => opencv-python
+4. Data Manipulation, Cleaning, Transformation => numpy, pandas
+6. Python Image Processing Library => Pillow
+7. API => FastAPI
