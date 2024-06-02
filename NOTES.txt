@@ -13,3 +13,7 @@
 12. Download pdf2image dependencies from "https://github.com/oschwartz10612/poppler-windows/releases/"
 13. Download the poppler, extract it, place it in the C drive and add its bin directory to env variable
 14. Now download pre-build binary package for tesseract dependencies from "https://github.com/tesseract-ocr/tesseract#installing-tesseract"
+
+#! NOTEBOOKS
+15. We create notebooks to test out small chunk of codes.
+16. Our first notebook is prescription_parser to parse the prescription and get the details of the patient. We use the pdf2image library to convert the pdf to image, then tesseract to extract the text.
