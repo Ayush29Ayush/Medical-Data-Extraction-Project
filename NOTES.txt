@@ -43,3 +43,4 @@ with Image.open('input_image.jpg') as img:
 21. To fix this issue, rather than giving a global threshold of 80, we can have segment wise thresholding. This is called adaptive thresholding.
 22. Try these concepts in a new ipynb file called cv_concepts.ipynb
 23. Refer => "https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html"
+24. Now add the adaptive thresholding logic inn prescription_parser.ipynb to get rid of the shadow and derive cleaned image.
