@@ -5,6 +5,25 @@
 6. Python Image Processing Library => Pillow
 7. API => FastAPI
 
+#! NOTE
+PILLOW and its example
+"
+The Pillow library in Python is a fork of the Python Imaging Library (PIL) and is used for opening, manipulating, and saving many different image file formats. It adds some user-friendly features like file format support and provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities. Pillow is often the preferred option for high-level image processing tasks that don’t require more advanced image processing expertise, making it suitable for both beginners and experienced programmers alike due to its simplicity and wide usage within the Python community.
+
+```
+from PIL import Image
+
+# Open an image file
+with Image.open('input_image.jpg') as img:
+    # Resize the image
+    resized_img = img.resize((300, 200))
+    
+    # Save the resized image with a new filename
+    resized_img.save('resized_image.jpg')
+```
+"
+
+
 #! INSTALLING LIBRARIES & DEPENDENCIES
 8. We create 2 directories - frontend and backend to avoid conflicts
 9. Create a requirements.txt file in backend directory and install all the dependencies in a virtual environment
@@ -17,3 +36,10 @@
 #! NOTEBOOKS
 15. We create notebooks to test out small chunk of codes.
 16. Our first notebook is prescription_parser to parse the prescription and get the details of the patient. We use the pdf2image library to convert the pdf to image, then tesseract to extract the text.
+17. For image representaion, anything in black i.e the text written contains a value close to 0, and anything in white i.e the background contains a value close to 255. This is the concept followed in opencv.
+18. For now, the issue we observe is that as the image contains a shadow from the mobile phone, any text written in that image is not recognized by tesseract.
+19. To fix this issue, we will apply a threshold logic that if a pixel is close to 0, we will set it to 0 and if it is greater than 80, we will set it to 255. By doing this, we can get rid of the shadow and get the details of the text. This concept is called simple thresholding.
+20. But there is a issue that if all the pixels of text inside the shadow is less than 80, then the entire shadow area is turned black and the text details are lost.
+21. To fix this issue, rather than giving a global threshold of 80, we can have segment wise thresholding. This is called adaptive thresholding.
+22. Try these concepts in a new ipynb file called cv_concepts.ipynb
+23. Refer => "https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html"
