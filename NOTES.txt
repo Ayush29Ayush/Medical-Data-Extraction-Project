@@ -44,3 +44,37 @@ with Image.open('input_image.jpg') as img:
 22. Try these concepts in a new ipynb file called cv_concepts.ipynb
 23. Refer => "https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html"
 24. Now add the adaptive thresholding logic inn prescription_parser.ipynb to get rid of the shadow and derive cleaned image.
+
+25. To extract meaningful data from the extracted text. we will use regex i.e regular expressions.
+#! REGEX
+"
+0. \ => the backslash (\) serves as an escape character. Its primary purpose is to indicate that the next character should be interpreted literally, rather than as a special character.
+1. \d+ => Matches one or more digits
+2. \s+ => Matches one or more whitespace characters
+3. \w+ => Matches one or more alphanumeric characters
+4. \W+ => Matches one or more non-alphanumeric characters
+5. \S+ => Matches one or more non-whitespace characters
+6. \D+ => Matches one or more non-digit characters
+7. \b => Matches a word boundary
+8. \B => Matches a non-word boundary
+9. ^ => Matches the beginning of a string
+10. $ => Matches the end of a string
+11. . => Matches any character
+12. * => Matches zero or more characters
+13. + => Matches one or more characters
+14. ? => Matches zero or one character
+15. {10} => Matches exactly ten characters
+16. {3,} => Matches three or more characters    
+17. {3,5} => Matches three to five characters
+18. [a-z] => Matches any lowercase letter
+19. [A-Z] => Matches any uppercase letter
+20. [a-zA-Z] => Matches any letter
+21. [a-zA-Z0-9] => Matches any alphanumeric character
+22. [^a-zA-Z0-9] => Matches any non-alphanumeric character
+23. [^a-zA-Z0-9\s] => Matches any non-alphanumeric or whitespace character
+24. [a-zA-Z0-9\s] => Matches any alphanumeric or whitespace character
+25. \d{10} => Matches a 10-digit number
+26. \d+\$ => Matches a number followed by a dollar sign
+27. \d+ dollors|\d+\$ => Matches a number followed by either 'dollors' or '$'
+"
+26. Do more testing on "https://regex101.com/"
