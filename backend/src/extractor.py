@@ -49,7 +49,7 @@ def extract(file_path, file_format):
 
 if __name__ == '__main__':
     try:
-        data = extract(r'backend\resources\prescription\pre_2.pdf', 'prescription')
+        data = extract(r'backend\resources\patient_details\pd_2.pdf', 'prescription')
         print(data)
     except Exception as e:
         print(f"Error: {e}")
