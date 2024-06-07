@@ -79,3 +79,4 @@ with Image.open('input_image.jpg') as img:
 "
 26. Do more testing on "https://regex101.com/"
 27. Create a parent class called MedicalDocParser and its child class called PrescriptionParser which will parse the prescription and get the details of the patient.
+28. For test driven development, we will write a test files to test out the code.
